@@ -1,21 +1,40 @@
 === jellybox ===
 Contributors: jellyfilledstudios 
 Donate link: http://www.jellyrobotics.com/
-Tags: plugin,shortcode,animation,tilt,slide,drawer
+Tags: plugin,shortcode,animation,tilt,slide,drawer,text rotation,rotation,image rotation
 Requires at least: 3.5.1
 Tested up to: 3.5.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-jellybox provides a simple to use shortcode that allows you to display animated boxes, images or text.
+jellybox provides a simple to use shortcode that allows you to display tilted, and/or animated text, images and boxes. Image, box and text rotation also works on older versions of Internet Explorer.
 
 
 
 
 == Description ==
 
-jellybox provides a simple to use shortcode that allows you to display animated boxes, images or text. Detailed examples and instructions for use can be found at http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
+jellybox provides a simple to use shortcode that allows you to display tilted, and/or animated text, images and boxes. Image, box and text rotation also works on older versions of Internet Explorer.
+
+
+= Example Usage =
+
+[jellybox class="jellyboxGreen" width="200" height="140" angle="15"]
+This text will appear in an attractive green gradient colored box tilted to a 15 degree angle.
+[/jellybox]
+
+[jellybox class="jellyboxBlue" width="200" height="140" deltaheight="100" deltatop="-100"]
+This text will appear in an attractive blue gradient colored box. When you click on this box, it will grow by 100px.
+[/jellybox]
+
+
+
+= Documentation & Support =
+
+Detailed examples and instructions for use can be found at http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
+
+You can find [documentation](http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/) and more detailed information about jellybox at [JellyRobotics.com](http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/). If you were unable to find the answer to your question on the examples page or in any of the documentation, please check the [support forum](http://wordpress.org/support/plugin/jellybox) on WordPress.org.
 
 
 
@@ -66,7 +85,7 @@ The actual margin correction will vary based on your theme and line heights
 
 Version 1.0.0 released
 Version 1.1.0 updated to use WP constants for include paths
-
+Version 1.2.0 updated the readme.txt file with more detailed description
 
 
 == Upgrade Notice ==
