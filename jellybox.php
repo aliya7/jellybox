@@ -1,5 +1,5 @@
 <?php
-require( ABSPATH . WPINC . '/shortcodes.php' );
+require_once( ABSPATH . WPINC . '/shortcodes.php' );
 
 /*
 * Plugin Name: jellybox
