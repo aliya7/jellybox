@@ -5,7 +5,7 @@ require( ABSPATH . WPINC . '/shortcodes.php' );
 * Plugin Name: jellybox
 * Plugin URI: http://www.jellyrobotics.com/
 * Description: Div Animation
-* Version: 1.0.0
+* Version: 1.1.0
 * Author: John Carter (not from Mars)
 * Author URI: http://www.jellyrobotics.com
 *
