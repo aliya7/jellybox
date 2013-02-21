@@ -8,14 +8,14 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-jellybox provides a simple to use shortcode that allows you to display rotations, and/or animated text, images and boxes.
+jellybox provides a simple to use shortcode that allows you to apply rotations and/or animations to text, images and boxes.
 
 
 
 
 == Description ==
 
-jellybox provides a simple to use shortcode that allows you to display tilted, and/or animated text, images and boxes. Image, box and text rotation also works on older versions of Internet Explorer.
+jellybox provides a simple to use shortcode that allows you to apply rotations and/or animations to text, images and boxes. Image, box and text rotation also works on older versions of Internet Explorer.
 
 
 = Example Usage =
