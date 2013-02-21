@@ -64,7 +64,8 @@ The actual margin correction will vary based on your theme and line heights
 
 == Changelog ==
 
-Version 1.0 released
+Version 1.0.0 released
+Version 1.1.0 updated to use WP constants for include paths
 
 
 
