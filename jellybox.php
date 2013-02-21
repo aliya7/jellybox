@@ -4,8 +4,8 @@ require_once( ABSPATH . WPINC . '/shortcodes.php' );
 /*
 * Plugin Name: jellybox
 * Plugin URI: http://www.jellyrobotics.com/
-* Description: Div Animation
-* Version: 1.1.0
+* Description: Tilted and/or Animated Text, Images and Boxes
+* Version: 1.2.0
 * Author: John Carter (not from Mars)
 * Author URI: http://www.jellyrobotics.com
 *
@@ -52,8 +52,7 @@ function install_blank_jellybox_css()
 	$text = $text . chr(47) . chr(42) . $crlf;
 	$text = $text . '* Plugin Name: jellybox' . $crlf;
 	$text = $text . '* Plugin URI: http://www.jellyrobotics.com/' . $crlf;
-	$text = $text . '* Description: Div Animation' . $crlf;
-	$text = $text . '* Version: 1.0.0' . $crlf;
+	$text = $text . '* Description: Tilted and/or Animated Text, Images and Boxes' . $crlf;
 	$text = $text . '* Author: John Carter (not from Mars)' . $crlf;
 	$text = $text . '* Author URI: http://www.jellyrobotics.com' . $crlf;
 	$text = $text . '*' . $crlf;
