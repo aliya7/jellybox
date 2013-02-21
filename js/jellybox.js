@@ -1,8 +1,8 @@
 /*
 * Plugin Name: jellybox
 * Plugin URI: http://www.jellyrobotics.com/
-* Description: Div Animation
-* Version: 1.0.0
+* Description: Tilted and/or Animated Text, Images and Boxes
+* Version: 1.2.0
 * Author: John Carter (not from Mars)
 * Author URI: http://www.jellyrobotics.com
 *
