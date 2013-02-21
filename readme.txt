@@ -8,7 +8,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-jellybox provides a simple to use shortcode that allows you to display tilted, and/or animated text, images and boxes. Image, box and text rotation also works on older versions of Internet Explorer.
+jellybox provides a simple to use shortcode that allows you to display rotations, and/or animated text, images and boxes.
 
 
 
@@ -21,11 +21,17 @@ jellybox provides a simple to use shortcode that allows you to display tilted, a
 = Example Usage =
 
 [jellybox class="jellyboxGreen" width="200" height="140" angle="15"]
+
 This text will appear in an attractive green gradient colored box tilted to a 15 degree angle.
+
 [/jellybox]
 
+
+
 [jellybox class="jellyboxBlue" width="200" height="140" deltaheight="100" deltatop="-100"]
+
 This text will appear in an attractive blue gradient colored box. When you click on this box, it will grow by 100px.
+
 [/jellybox]
 
 
@@ -41,9 +47,20 @@ You can find [documentation](http://www.jellyrobotics.com/2013/02/09/jellybox-sh
 
 == Installation ==
 
-1. Extract the content of the `jellybox.zip`
-2. Upload the extracted content to the `/wp-content/plugins/` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
+= Installation via WordPress admin panel =
+
+1. Navigate to the plugins section
+2. Select Add New
+3. In the search box enter jellybox
+4. Install and activate the plugin jellybox
+ 
+
+= Manual Installation =
+
+1. Download the file `jellybox.zip` from WordPress.org
+2. Extract the content of the `jellybox.zip`
+3. Upload the extracted content to the `/wp-content/plugins/` directory
+4. Activate the plugin through the 'Plugins' menu in WordPress
 
 
 
@@ -55,36 +72,29 @@ You can find [documentation](http://www.jellyrobotics.com/2013/02/09/jellybox-sh
 The 'live' site for documentation, FAQs and comments for jellybox is http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
 
 
-= Where can I find some examples?
+= Where can I find some examples? =
 
 Detailed examples can be found at http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
 
-= Some of my boxes appear have a line space above them
+= Some of my boxes appear have a line space above them =
 
-This is an issue with the wordpress wpautop() function and certain themes. The problem appears to be that after jellybox embeds javascript into the page, wpautop() is appending the javascript with a </p> tag. 
-
-The workaround for this issue has been to insert something like this above the affected boxes:
-
-<div class="pfix"></div>
-
-Next, add a style class to your page or theme:
-
-.pfix { margin-bottom: -40px; }
-
-The actual margin correction will vary based on your theme and line heights
+This is an issue with the wordpress wpautop() function and certain themes. The workaround for this issue has been to insert a div tag above the affected jellybox with a bottom margin that will offset the P tag added by wpautop()
 
 
 
 == Screenshots ==
 
-1. Detailed examples can be found at http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
-
+1. Simple jellybox
+2. nested jellybox with rotations
+3. nested jellyboxes with animation
 
 
 == Changelog ==
 
 Version 1.0.0 released
+
 Version 1.1.0 updated to use WP constants for include paths
+
 Version 1.2.0 updated the readme.txt file with more detailed description
 
 
