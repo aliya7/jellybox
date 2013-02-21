@@ -76,7 +76,7 @@ The 'live' site for documentation, FAQs and comments for jellybox is http://www.
 
 Detailed examples can be found at http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
 
-= Some of my boxes appear have a line space above them =
+= Some of my boxes have a line spaces above them =
 
 This is an issue with the wordpress wpautop() function and certain themes. The workaround for this issue has been to insert a div tag above the affected jellybox with a bottom margin that will offset the P tag added by wpautop()
 
