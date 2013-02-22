@@ -1,7 +1,7 @@
 === jellybox ===
 Contributors: jellyfilledstudios 
 Donate link: http://www.jellyrobotics.com/
-Tags: plugin,shortcode,animation,tilt,slide,drawer,text rotation,rotation,image rotation
+Tags: plugin,shortcode,animation,tilt,slider,banner,drawer,text rotation,rotation,image rotation
 Requires at least: 3.5.1
 Tested up to: 3.5.1
 Stable tag: trunk
@@ -80,11 +80,11 @@ This is an issue with the wordpress wpautop() function and certain themes. The w
 
 == Screenshots ==
 
-0. Slide in reminder using jellybox
-1. In-line text at an angle using jellybox
-2. Simple jellybox
-3. nested jellybox with rotations
-4. nested jellyboxes with animation
+1. Slide in reminder using jellybox
+2. In-line text at an angle using jellybox
+3. Simple jellybox
+4. nested jellybox with rotations
+5. nested jellyboxes with animation
 
 
 == Changelog ==
