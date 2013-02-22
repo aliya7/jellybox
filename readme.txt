@@ -80,6 +80,7 @@ This is an issue with the wordpress wpautop() function and certain themes. The w
 
 == Screenshots ==
 
+0. Slide in reminder using jellybox
 1. In-line text at an angle using jellybox
 2. Simple jellybox
 3. nested jellybox with rotations
