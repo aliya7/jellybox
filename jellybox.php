@@ -5,7 +5,7 @@ require_once( ABSPATH . WPINC . '/shortcodes.php' );
 * Plugin Name: jellybox
 * Plugin URI: http://www.jellyrobotics.com/
 * Description: Tilted and/or Animated Text, Images and Boxes
-* Version: 1.2.0
+* Version: 1.3
 * Author: John Carter (not from Mars)
 * Author URI: http://www.jellyrobotics.com
 *
@@ -88,9 +88,9 @@ function jellybox_handler( $atts, $content=null )
 	if ( $jellyboxCSSandJSincluded === false )
 		{
 		$jellyboxCSSandJSincluded = true;
-		$jellybox_output = $jellybox_output . '<script type="text/javascript" src="'.plugins_url() . '/jellybox/js/jellybox.js"></script>';
-		$jellybox_output = $jellybox_output . '<link rel="stylesheet" type="text/css" href="'.plugins_url() . '/jellybox/template/jellybox.css"></link>';
-		$jellybox_output = $jellybox_output . '<link rel="stylesheet" type="text/css" href="'.plugins_url() . '/jellybox/css/jellybox.css"></link>';
+		$jellybox_output .= '<script type="text/javascript" src="'.plugins_url() . '/jellybox/js/jellybox.js"></script>';
+		$jellybox_output .= '<link rel="stylesheet" type="text/css" href="'.plugins_url() . '/jellybox/template/jellybox.css"></link>';
+		$jellybox_output .= '<link rel="stylesheet" type="text/css" href="'.plugins_url() . '/jellybox/css/jellybox.css"></link>';
 		}
 
 
@@ -137,6 +137,7 @@ function jellybox_handler( $atts, $content=null )
 		'shadow' => 'no',
 		'ontoggle' => '',
 		'interval' => '0',
+		'inline' => '',
 		'cstyle' => '',
 		'style' => '',
 		'class' => $defaultclass);		// used to allow custom class configuration and custom classContainer configuration
@@ -167,42 +168,58 @@ function jellybox_handler( $atts, $content=null )
 	));
 
 
+
+	// Manage optional wrappers DIV or SPAN
+	//
+	$wraptag = "div";
+
+	if ( strcasecmp( $inline, "yes" ) == 0 )
+		{
+		$wraptag = "span";
+		$cstyle = 'display:inline-block; vertical-align:top;' . trim($cstyle);
+		$style = 'display:inline-block; vertical-align:top;' . trim($style);
+		}
+
+
 	// Fix the custom styles
 	//
+	$cstyle = trim($cstyle);
 	if ( !empty($cstyle) )
 		$cstyle = ' ' . $cstyle;
 
+	$style = trim($style);
 	if ( !empty($style) )
 		$style = ' ' . $style;
 
 
 	// Create the container
 	//
-	$jellybox_output = $jellybox_output . '<div id="' .$elementid. 'Container" class="' .$class. 'Container" style="height:' .$height. 'px; width:' .$width. 'px; z-index: 99998;' . $cstyle . '">';
+	$jellybox_output .= '<' . $wraptag . ' id="' .$elementid. 'Container" class="' .$class. 'Container" style="height:' .$height. 'px; width:' .$width. 'px; z-index: 99998;' . $cstyle . '">';
+
 
 	
 	// Create the JellDiv and it's content
 	//
-	$jellybox_output = $jellybox_output . '<div id="' .$elementid. '" class="' .$class.'" style="height:' . $height . 'px; width:' . $width . 'px; position: relative; z-index: 99999; overflow: hidden;' . $style . '">';
+	$jellybox_output .= '<' . $wraptag . ' id="' .$elementid. '" class="' .$class.'" style="height:' . $height . 'px; width:' . $width . 'px; position: relative; z-index: 99999; overflow: hidden;' . $style . '">';
 
 
 	// Output the content
 	//
-	$jellybox_output = $jellybox_output . do_shortcode( $content );
+	$jellybox_output .= do_shortcode( $content );
 
 
 	// Close the DIV's
 	//
-	$jellybox_output = $jellybox_output . '</div>';
-	$jellybox_output = $jellybox_output . '</div>';
+	$jellybox_output .= '</' . $wraptag . '>';
+	$jellybox_output .= '</' . $wraptag . '>';
 
 
 	// Execute the javascript
 	//
-	$jellybox_output = $jellybox_output . '<script type="text/javascript">';
-	$jellybox_output = $jellybox_output . 'document.getElementById("'.$elementid . '").jellydata = ' . $jellydata . ';';
-	$jellybox_output = $jellybox_output . 'document.getElementById("'.$elementid . '").jellyboxcontroller = new JellyBoxController().init(document.getElementById("'.$elementid . '"));';
-	$jellybox_output = $jellybox_output . '</script>';
+	$jellybox_output .= '<script type="text/javascript">';
+	$jellybox_output .= 'document.getElementById("'.$elementid . '").jellydata = ' . $jellydata . ';';
+	$jellybox_output .= 'document.getElementById("'.$elementid . '").jellyboxcontroller = new JellyBoxController().init(document.getElementById("'.$elementid . '"));';
+	$jellybox_output .= '</script>';
 
 
 	return $jellybox_output;
