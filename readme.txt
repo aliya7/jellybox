@@ -80,9 +80,10 @@ This is an issue with the wordpress wpautop() function and certain themes. The w
 
 == Screenshots ==
 
-1. Simple jellybox
-2. nested jellybox with rotations
-3. nested jellyboxes with animation
+1. In-line text at an angle using jellybox
+2. Simple jellybox
+3. nested jellybox with rotations
+4. nested jellyboxes with animation
 
 
 == Changelog ==
