@@ -21,17 +21,13 @@ jellybox provides a simple to use shortcode that allows you to apply rotations a
 = Example Usage =
 
 [jellybox class="jellyboxGreen" width="200" height="140" angle="15"]
-
 This text will appear in an attractive green gradient colored box tilted to a 15 degree angle.
-
 [/jellybox]
 
 
 
 [jellybox class="jellyboxBlue" width="200" height="140" deltaheight="100" deltatop="-100"]
-
 This text will appear in an attractive blue gradient colored box. When you click on this box, it will grow by 100px.
-
 [/jellybox]
 
 
@@ -96,6 +92,8 @@ Version 1.0.0 released
 Version 1.1.0 updated to use WP constants for include paths
 
 Version 1.2.0 updated the readme.txt file with more detailed description
+
+Version 1.3 added new option `inline="YES"` (default is "NO"). This new option allows the jellybox to be displayed as in-line text using SPAN tags rather than the default wrapper which is DIV tags.
 
 
 == Upgrade Notice ==
