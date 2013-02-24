@@ -31,6 +31,18 @@ This text will appear in an attractive blue gradient colored box. When you click
 [/jellybox]`
 
 
+= Contact Form Example =
+
+`[jellybox class="jellyboxGreen" width="100" height="20" deltawidth="350" deltaheight="700" deltatop="-400" gospeed="500" returnspeed="100" target="boxtrigger"]
+<div id="boxtrigger">Contact us
+<div style="float:right;">
+<span style="color:#ffffff;">[X]</span>
+</div>
+</div>
+[contact-form-7 id="152" title="Contact form 1"]
+[/jellybox]`
+
+
 
 = Documentation & Support =
 
