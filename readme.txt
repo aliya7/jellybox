@@ -20,15 +20,15 @@ jellybox provides a simple to use shortcode that allows you to apply rotations a
 
 = Example Usage =
 
-[jellybox class="jellyboxGreen" width="200" height="140" angle="15"]
+`[jellybox class="jellyboxGreen" width="200" height="140" angle="15"]
 This text will appear in an attractive green gradient colored box tilted to a 15 degree angle.
-[/jellybox]
+[/jellybox]`
 
 
 
-[jellybox class="jellyboxBlue" width="200" height="140" deltaheight="100" deltatop="-100"]
+`[jellybox class="jellyboxBlue" width="200" height="140" deltaheight="100" deltatop="-100"]
 This text will appear in an attractive blue gradient colored box. When you click on this box, it will grow by 100px.
-[/jellybox]
+[/jellybox]`
 
 
 
@@ -67,7 +67,14 @@ You can find [documentation](http://www.jellyrobotics.com/2013/02/09/jellybox-sh
 
 Some contact forms cause the jellybox to close when entering the fields or pressing the submit button. A work around for this is to place a header line at the top of the jellybox that controls the opening and closing of the box. Here is an example that uses a Contact Form 7 inside a jellybox
 
-`[jellybox class="jellyboxGreen" width="100" height="20" deltawidth="350" deltaheight="700" deltatop="-400" gospeed="500" returnspeed="100" target="boxtrigger"]<div id="boxtrigger">Contact us<div style="float:right;"><span style="color:#ffffff;">[X]</span></div></div>[contact-form-7 id="152" title="Contact form 1"][/jellybox]`
+`[jellybox class="jellyboxGreen" width="100" height="20" deltawidth="350" deltaheight="700" deltatop="-400" gospeed="500" returnspeed="100" target="boxtrigger"]
+<div id="boxtrigger">Contact us
+<div style="float:right;">
+<span style="color:#ffffff;">[X]</span>
+</div>
+</div>
+[contact-form-7 id="152" title="Contact form 1"]
+[/jellybox]`
 
 This example creates an `[X]` in the upper right hand corner of the box. Clicking anywhere on the title line or the `[X]` cause the jellybox to open or close as expected.
 
