@@ -63,6 +63,15 @@ You can find [documentation](http://www.jellyrobotics.com/2013/02/09/jellybox-sh
 
 == Frequently Asked Questions ==
 
+= How can I place a Contact Form inside a jellybox? =
+
+Some contact forms cause the jellybox to close when entering the fields or pressing the submit button. A work around for this is to place a header line at the top of the jellybox that controls the opening and closing of the box. Here is an example that uses a Contact Form 7 inside a jellybox
+
+`[jellybox class="jellyboxGreen" width="100" height="20" deltawidth="350" deltaheight="700" deltatop="-400" gospeed="500" returnspeed="100" target="boxtrigger"]<div id="boxtrigger">Contact us<div style="float:right;"><span style="color:#ffffff;">[X]</span></div></div>[contact-form-7 id="152" title="Contact form 1"][/jellybox]`
+
+This example creates an `[X]` in the upper right hand corner of the box. Clicking anywhere on the title line or the `[X]` cause the jellybox to open or close as expected.
+
+
 = Where can I find additional FAQs for jellybox? =
 
 The 'live' site for documentation, FAQs and comments for jellybox is http://www.jellyrobotics.com/2013/02/09/jellybox-shortcode-wordpress-plugin/
