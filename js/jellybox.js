@@ -517,6 +517,13 @@ var JellyBoxController = function()
 			jellyBoxObj.jellydata.controlObj.onmouseout = null;
 			}
 		else
+		if ( control=='clock')
+			{
+			jellyBoxObj.jellydata.controlObj.onmouseover = null;
+			jellyBoxObj.jellydata.controlObj.onclick = null;
+			jellyBoxObj.jellydata.controlObj.onmouseout = null;
+			}
+		else
 			{	// default to onclick
 			jellyBoxObj.jellydata.controlObj.onmouseover = null;
 			jellyBoxObj.jellydata.controlObj.onclick = jellyBoxObj.jellydata.controlObj.onclickController.click;
