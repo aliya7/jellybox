@@ -5,7 +5,7 @@ require_once( ABSPATH . WPINC . '/shortcodes.php' );
 * Plugin Name: jellybox
 * Plugin URI: http://www.jellyrobotics.com/
 * Description: Tilted and/or Animated Text, Images and Boxes
-* Version: 1.3
+* Version: 1.4
 * Author: John Carter (not from Mars)
 * Author URI: http://www.jellyrobotics.com
 *
