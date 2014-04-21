@@ -3,7 +3,7 @@ Contributors: jellyfilledstudios
 Donate link: http://www.jellyrobotics.com/
 Tags: plugin,shortcode,animation,tilt,slider,banner,drawer,text rotation,rotation,image rotation
 Requires at least: 3.5.1
-Tested up to: 3.5.1
+Tested up to: 3.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
